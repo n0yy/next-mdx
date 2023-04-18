@@ -1,6 +1,4 @@
 import { ReactNode } from "react";
-import Latex from "react-latex-next";
-import "katex/dist/katex.min.css";
 
 interface TypographyProps {
   children: ReactNode;
