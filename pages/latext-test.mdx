@@ -1,0 +1,59 @@
+import Typography from "../components/Typography";
+import Image from "next/image";
+import foto from "../public/foto.png";
+import Latex from "react-latex-next";
+import "katex/dist/katex.min.css";
+import Head from "next/head";
+
+<Head>
+  <title>Latex Test</title>
+</Head>
+
+<Typography>
+# Rumus Matematika
+<div className="relative">
+    <Image src={foto} alt="NEXT JS" priority />
+</div>
+Berikut adalah contoh penggunaan KaTeX:
+
+_<Latex>$a^2 + b^2 = c^2 \\to \\gamma\\int \\to W t\\bar b$</Latex>_
+
+# H1 heading
+
+## H2 heading
+
+This is a list in markdown:
+
+- One
+- Two
+- Three
+
+> The examples above load the script deferred using the defer attribute to speed up page rendering. The katex object will be available after DOMContentLoaded event is fired on the document. If you do not use defer, katex object will be available after the corresponding script tag.
+
+```python hello.py
+print("Rendered with Code Hike")
+```
+
+```javascript src/App.js
+import "@/styles/globals.css";
+import "@code-hike/mdx/dist/index.css";
+import type { AppProps } from "next/app";
+
+export default function App({ Component, pageProps }: AppProps) {
+  return <Component {...pageProps} />;
+}
+```
+
+<CH.Code>
+
+```python one.py
+print("Hello, one!")
+```
+
+```python two.py
+print("Hello, two!")
+```
+
+</CH.Code>
+
+</ Typography>
